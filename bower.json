@@ -1,0 +1,27 @@
+{
+  "name": "AdanFergusonWebsite",
+  "authors": [
+    "Adan Ferguson <adanferguson@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.8"
+  },
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}
