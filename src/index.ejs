@@ -6,7 +6,11 @@
   <!-- endbower -->
 
   <!-- inject:css -->
+  <link rel="stylesheet" href="/css/_header.css">
   <link rel="stylesheet" href="/css/home.css">
+  <!-- endinject -->
+
+  <!-- inject:less -->
   <!-- endinject -->
 
   <title>Adam Ferguson</title>
@@ -18,8 +22,9 @@
 
 <body>
 
-<div>
+<div class="container-fluid">
 
+    <div ng-include="'pages/_header.html'"></div>
     <div id="page-<%= page %>" ng-include="'pages/<%= page %>.html'">
     </div>
 
@@ -29,6 +34,9 @@
 
   <!-- bower:js -->
   <script src="components/angular/angular.js"></script>
+  <script src="components/jquery/dist/jquery.js"></script>
+  <script src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="components/less/dist/less.js"></script>
   <!-- endbower -->
 
   <!-- inject:js -->

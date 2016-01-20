@@ -5,7 +5,7 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('views', process.cwd() + '/src');
 
-app.use(express.static('src'));
+app.use(express.static(__dirname + '/src'));
 
 app.get('/', function (req, res) {
    res.render('index', {page: 'home'});

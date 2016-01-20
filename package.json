@@ -7,10 +7,12 @@
     "ejs": "^2.3.4",
     "gulp": "^3.9.0",
     "gulp-load-plugins": "^1.2.0",
+    "less-middleware": "^2.0.1",
     "wiredep": "^3.0.0"
   },
   "devDependencies": {
     "express": "^4.13.3",
+    "gulp-less": "^3.0.5",
     "gulp-nodemon": "^2.0.6"
   },
   "scripts": {
