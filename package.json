@@ -10,7 +10,8 @@
     "wiredep": "^3.0.0"
   },
   "devDependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "gulp-nodemon": "^2.0.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

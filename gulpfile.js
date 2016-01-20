@@ -1,17 +1,27 @@
-var gulp = require('gulp');
-var inject = require('gulp-inject');
-var wiredep = require('wiredep');
+var gulp = require('gulp')
+, inject = require('gulp-inject')
+, wiredep = require('wiredep')
+, nodemon = require('gulp-nodemon');
 
-gulp.task('default', function() {
+gulp.task('injectfiles', function() {
 
-    var target = './src/index.html';
-    wiredep({src: target});
+    var targetUrl = './src/index.ejs';
+    wiredep({src: targetUrl});
 
-    var target = gulp.src(target);
-    // It's not necessary to read the files (will speed up things), we're only after their paths:
+    var target = gulp.src(targetUrl);
     var sources = gulp.src(['./src/js/**/*.js', './src/css/**/*.css'], {read: false});
 
-    target.pipe(inject(sources))
+    target.pipe(inject(sources, {ignorePath: 'src'}))
       .pipe(gulp.dest('./src'));
 
+});
+
+gulp.task('start', function () {
+  nodemon({ script: 'server.js'
+          , ext: 'html ejs js css'
+          , ignore: ['index.ejs']
+          , tasks: ['injectfiles'] })
+    .on('restart', function () {
+      console.log('restarted!')
+    })
 });
