@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300,200);
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300,300italic,700,700italic);
-
+@import url("header.css");
 html, body {
-
-    margin: 0 auto;
-
-}
+  margin: 0 auto; }

@@ -1,0 +1,20 @@
+<div class='header'>
+    <a class='title' href='/'>
+        <div class='logo'>
+            <% include ../public/img/logo.svg %>
+        </div>
+        <div class='name'>ADAM FERGUSON</div>
+    </a>
+
+    <ul class="menu">
+        <% for(var p in pages) {
+
+            if(p == '') continue; %>
+            <li class='menu-item <%= pages[p].view == currentPage ? "active" : null %>'
+                onclick='window.location = "/<%= p %>"'>
+                <%= pages[p].name %>
+            </li>
+
+        <% } %>
+    </ul>
+</div>
