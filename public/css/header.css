@@ -1,10 +1,7 @@
 .header {
-  background-color: #375AD2;
   width: 100%;
   position: relative;
-  -webkit-box-shadow: 0px 7px 9px 0px #898ccc;
-  -moz-box-shadow: 0px 7px 9px 0px #898ccc;
-  box-shadow: 0px 7px 9px 0px #898ccc; }
+  border-bottom: 2px solid #FFF; }
   .header .title {
     color: white;
     transition: color 0.3s ease;
@@ -37,7 +34,7 @@
       stroke: white !important; }
   .header .menu {
     position: absolute;
-    top: 5px;
+    top: 15px;
     right: 30px; }
     .header .menu .menu-item {
       color: white;

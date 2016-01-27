@@ -1,0 +1,77 @@
+
+.footer {
+
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    margin-top: 40px;
+    border-top: 4px dashed #FFFFFF;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+    h1{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    .contact{
+
+        $fill: #FF4949;
+
+        border: 2px solid white;
+        background-color: $fill;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        display: inline-block;
+        padding: 0.5em 1em;
+        cursor: pointer;
+
+        transition: 0.3s ease;
+        transition-property: color, background-color, border-color;
+
+        span {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        &:hover{
+
+            color: $fill;
+            background-color: white;
+            border-color: $fill;
+        }
+    }
+
+    .left {
+
+        left: 10px;
+
+        i {
+            font-size: 1.5em;
+        }
+    }
+
+    .right{
+        right: 10px;
+
+        img {
+            height: 40px;
+        }
+    }
+
+    .side {
+
+            position: absolute;
+            bottom: 10px;
+            font-size: 1.3em;
+            border: 2px dotted white;
+            padding: 0.2em 0.3em;
+            cursor: pointer;
+
+        &:hover{
+
+            border-style: solid;
+        }
+    }
+}

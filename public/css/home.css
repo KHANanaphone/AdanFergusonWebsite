@@ -1,0 +1,46 @@
+.home .games {
+  display: block;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #AAF;
+  border-bottom: 2px solid white; }
+.home img.self {
+  height: 430px; }
+.home .splash {
+  -webkit-box-shadow: 0px 7px 9px 0px #898ccc;
+  -moz-box-shadow: 0px 7px 9px 0px #898ccc;
+  box-shadow: 0px 7px 9px 0px #898ccc; }
+.home .left {
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  color: #CCC;
+  padding-top: 100px; }
+  .home .left .strong {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold; }
+.home .right {
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif; }
+.home .greeting {
+  margin-top: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300; }
+  .home .greeting .quote {
+    font-family: 'Exo', sans-serif;
+    font-size: 1.1em;
+    color: #666;
+    font-style: italic; }
+  .home .greeting a {
+    font-weight: normal; }
+
+@media (max-width: 767px) {
+  .splash {
+    padding-top: 10px !important; }
+
+  .home .left {
+    padding-top: 0px; } }

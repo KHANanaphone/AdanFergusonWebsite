@@ -1,0 +1,46 @@
+.footer {
+  text-align: center;
+  color: white;
+  padding: 10px 0px;
+  margin-top: 40px;
+  border-top: 4px dashed #FFFFFF;
+  position: relative;
+  font-family: 'Montserrat', sans-serif; }
+  .footer h1 {
+    font-size: 2.5em;
+    font-weight: bold; }
+  .footer .contact {
+    border: 2px solid white;
+    background-color: #FF4949;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    transition-property: color, background-color, border-color; }
+    .footer .contact span {
+      font-size: 1.5em;
+      font-weight: bold; }
+    .footer .contact:hover {
+      color: #FF4949;
+      background-color: white;
+      border-color: #FF4949; }
+  .footer .left {
+    left: 10px; }
+    .footer .left i {
+      font-size: 1.5em; }
+  .footer .right {
+    right: 10px; }
+    .footer .right img {
+      height: 40px; }
+  .footer .side {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.3em;
+    border: 2px dotted white;
+    padding: 0.2em 0.3em;
+    cursor: pointer; }
+    .footer .side:hover {
+      border-style: solid; }

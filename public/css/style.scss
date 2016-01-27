@@ -1,10 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300,200);
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300,300italic,700,700italic);
+
 @import url('header.css');
+@import url("home.css");
+@import url("footer.css");
 
 html, body {
 
     margin: 0 auto;
+
+}
+
+.splash {
+
+    padding: 30px 0px 20px;
+    width: 100%;
+    background-color: #7D7D7D;
+    background-image: url('../img/dark-brick-wall.png');
+}
+
+.primary-color {
+
+    background-color: #375AD2;
 
 }
