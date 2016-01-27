@@ -1,0 +1,164 @@
+#about {
+
+    .timeline{
+
+        background-color: #1F3461;
+        background-image: url('/img/cardboard.png');
+
+        i{
+            padding: 0 1em;
+        }
+
+        h1 {
+
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Exo', sans-serif;
+            font-weight: 900;
+            font-size: 2em;
+            color: white;
+        }
+
+        .timeline-body{
+
+            $color: #9292FF;
+            position: relative;
+            margin-top: 30px;
+            padding-bottom: 50px;
+
+            .axis {
+
+                margin-left: 50%;
+                border-left: 2px solid white;
+            }
+
+            .tick {
+
+                position: absolute;
+
+                &.minor {
+
+                    width: 4%;
+                    left: 48%;
+                    border-top: 2px solid white;
+                }
+
+                &.major {
+
+                    z-index: 10;
+
+                    margin-top: -15px;
+                    width: 10%;
+                    left: 45%;
+                    border: 2px solid $color;
+                    text-align: center;
+                    color: $color;
+                    background-color: white;
+
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+            }
+
+
+            .line {
+
+                position: absolute;
+                border-top: 3px solid $color;
+                width: 20%;
+
+                &.left {
+
+                    left: 30%;
+                }
+
+                &.right {
+
+                    right: 30%;
+                }
+            }
+
+            .dot {
+
+                position: absolute;
+                border: 3px solid #9292FF;
+                background-color: white;
+                z-index: 8;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                left: calc(50% - 8px);
+                margin-top: -6px;
+            }
+
+            .section {
+
+                position: absolute;
+                width: 40%;
+                background-color: white;
+                border: 3px solid $color;
+                padding: 0.5em 1em;
+
+                &.left {
+                    left: 0%;
+
+                    .line {
+
+                        right: -26%;
+                    }
+
+                    .dot {
+                        right: -28%;
+                    }
+                }
+
+                &.right {
+                    right: 0%;
+
+                    .line {
+
+                        left: -26%;
+                    }
+
+                    .dot {
+                        left: -28%;
+                    }
+                }
+
+                .date {
+
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    color: #888;
+                    font-size: 0.9em;
+                }
+
+                .employer {
+
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+
+                .position {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.1em;
+                    font-weight: 400;
+                    font-style: italic;
+                    margin-top: 10px;
+                }
+
+                .text {
+
+                    margin-top: 20px;
+                }
+
+                .skills {
+
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

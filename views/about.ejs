@@ -1,1 +1,125 @@
-dsadas
+<%
+    var current = {};
+    var params = {
+        rangeStart: 2004,
+        rangeEnd: 2016,
+        tickHeight: 100
+    };
+
+    params.totalHeight = ((params.rangeEnd - params.rangeStart) * params.tickHeight);
+
+    function yearToStyle(year, bottom){
+
+        var height = params.tickHeight * (year - params.rangeStart);
+
+        if(!bottom)
+            return 'top:' + height + 'px;';
+        else
+            return 'bottom:' + (params.totalHeight - height) + 'px;';
+    }
+
+    //gets the correct 'style' of the object in 'current'
+    function getStyle(){
+
+        var str = '';
+
+        if(current.top)
+            str += yearToStyle(current.top);
+        if(current.bottom)
+            str += yearToStyle(current.bottom, true);
+
+        return str;
+    };
+
+    function getConnector(){
+
+        var str = '<div class="line ' + current.side + '" style="' + yearToStyle(current.top) + '"></div>';
+        str += '<div class="dot" style="' + yearToStyle(current.top) + '"></div>';
+        return str;
+    };
+%>
+
+<div id='about'>
+
+    <div class='timeline'>
+        <div class='container'>
+            <h1>
+                <i class='fa fa-calendar'></i>
+                My Timeline
+                <i class='fa fa-clock-o'></i>
+            </h1>
+
+            <div class='timeline-body'>
+
+                <!-- AXIS -->
+                <div class='axis' style='height:<%= params.totalHeight %>px;'></div>
+
+                <!-- TICKS -->
+                <% for(var i = params.rangeStart; i <= params.rangeEnd; i++){ %>
+                    <div class='tick <%= i % 4 == 0 ? "major" : "minor" %>'
+                         style='<%= yearToStyle(i); %>'/>
+
+                         <%= i % 4 == 0 ? i : null %>
+
+                     </div>
+                 <% } %>
+
+                 <!-- SECTIONS -->
+                 <% current = {side: 'left', top: 2008} %>
+                 <%- getConnector() %>
+                  <div class='section left' style='<%= getStyle() %>'>
+                     <div class='date'>January 2008 - January 2010</div>
+                     <div class='employer'>University of Alberta/Hole School of Construction Engineering</div>
+                     <div class='position'>Software Developer (Internship)</div>
+                     <div class='text'>Text text text</div>
+                     <div class='skills'>Skills</div>
+                 </div>
+
+                 <% current = {side: 'left', top: 2010.75} %>
+                 <%- getConnector() %>
+                  <div class='section left' style='<%= getStyle() %>'>
+                     <div class='date'>October 2010 - July 2011</div>
+                     <div class='employer'>Asymmetric Ventures</div>
+                     <div class='position'>Software Developer</div>
+                     <div class='text'>Text text text</div>
+                     <div class='skills'>Skills</div>
+                 </div>
+
+                 <% current = {side: 'left', top: 2014} %>
+                 <%- getConnector() %>
+                  <div class='section left' style='<%= getStyle() %>'>
+                     <div class='date'>January 2014 - November 2014</div>
+                     <div class='employer'>SpatialTree</div>
+                     <div class='position'>Lead Web Developer </div>
+                     <div class='text'>Text text text</div>
+                     <div class='skills'>Skills</div>
+                 </div>
+
+                 <% current = {side: 'right', top: 2004.75, bottom: 2010} %>
+                 <%- getConnector() %>
+                  <div class='section right' style='<%= getStyle() %>'>
+                     <div class='date'>September 2004 - April 2010</div>
+                     <div class='employer'>University of Alberta</div>
+                     <div class='position'>BSc. Computing Science</div>
+                     <div class='text'>Text text text</div>
+                     <div class='skills'>Skills</div>
+                 </div>
+
+                 <% current = {side: 'right', top: 2011.66, bottom: 2015.75} %>
+                 <%- getConnector() %>
+                  <div class='section right' style='<%= getStyle() %>'>
+                      <div class='date'>September 2011 - Present</div>
+                      <div class='employer'>Self-Employed / Freelancing</div>
+                      <div class='position'>Web & Software Developer, Game Designer</div>
+                      <div class='text'>Text text text</div>
+                      <div class='skills'>Skills</div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+</script>

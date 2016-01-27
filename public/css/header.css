@@ -47,9 +47,9 @@
       font-weight: 800;
       padding: 0.5em 1em; }
       .header .menu .menu-item:hover {
-        background-color: #6C7C8E; }
+        background-color: #538CCC; }
       .header .menu .menu-item.active {
-        background-color: #444; }
+        border: 2px solid white; }
 
 @media (max-width: 920px) {
   .header .menu {

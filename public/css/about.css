@@ -1,0 +1,92 @@
+#about .timeline {
+  background-color: #1F3461;
+  background-image: url("/img/cardboard.png"); }
+  #about .timeline i {
+    padding: 0 1em; }
+  #about .timeline h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    color: white; }
+  #about .timeline .timeline-body {
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 50px; }
+    #about .timeline .timeline-body .axis {
+      margin-left: 50%;
+      border-left: 2px solid white; }
+    #about .timeline .timeline-body .tick {
+      position: absolute; }
+      #about .timeline .timeline-body .tick.minor {
+        width: 4%;
+        left: 48%;
+        border-top: 2px solid white; }
+      #about .timeline .timeline-body .tick.major {
+        z-index: 10;
+        margin-top: -15px;
+        width: 10%;
+        left: 45%;
+        border: 2px solid #9292FF;
+        text-align: center;
+        color: #9292FF;
+        background-color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold; }
+    #about .timeline .timeline-body .line {
+      position: absolute;
+      border-top: 3px solid #9292FF;
+      width: 20%; }
+      #about .timeline .timeline-body .line.left {
+        left: 30%; }
+      #about .timeline .timeline-body .line.right {
+        right: 30%; }
+    #about .timeline .timeline-body .dot {
+      position: absolute;
+      border: 3px solid #9292FF;
+      background-color: white;
+      z-index: 8;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      left: calc(50% - 8px);
+      margin-top: -6px; }
+    #about .timeline .timeline-body .section {
+      position: absolute;
+      width: 40%;
+      background-color: white;
+      border: 3px solid #9292FF;
+      padding: 0.5em 1em; }
+      #about .timeline .timeline-body .section.left {
+        left: 0%; }
+        #about .timeline .timeline-body .section.left .line {
+          right: -26%; }
+        #about .timeline .timeline-body .section.left .dot {
+          right: -28%; }
+      #about .timeline .timeline-body .section.right {
+        right: 0%; }
+        #about .timeline .timeline-body .section.right .line {
+          left: -26%; }
+        #about .timeline .timeline-body .section.right .dot {
+          left: -28%; }
+      #about .timeline .timeline-body .section .date {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #888;
+        font-size: 0.9em; }
+      #about .timeline .timeline-body .section .employer {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2em;
+        font-weight: 600; }
+      #about .timeline .timeline-body .section .position {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1em;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 10px; }
+      #about .timeline .timeline-body .section .text {
+        margin-top: 20px; }
+      #about .timeline .timeline-body .section .skills {
+        margin-top: 20px; }
