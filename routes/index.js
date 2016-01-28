@@ -13,7 +13,7 @@ router.get('/*', function(req, res) {
     var pages = {
         '': {name: 'Home', view: 'home'},
         about: {name: 'About Me', view: 'about'},
-        projects: {name: 'Projects', view: 'projects'},
+        mywork: {name: 'My Work', view: 'mywork'},
         contact: {name: 'Contact', view: 'contact'},
     };
 
