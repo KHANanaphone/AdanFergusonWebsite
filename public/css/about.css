@@ -1,5 +1,15 @@
+#about .subtitle {
+  width: 100%;
+  height: 150px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #3C3B3E;
+  padding-top: 53px; }
 #about .timeline {
-  background-color: #1F3461;
+  background-color: #152038;
   background-image: url("/img/cardboard.png"); }
   #about .timeline i {
     padding: 0 1em; }
@@ -28,16 +38,16 @@
         margin-top: -15px;
         width: 10%;
         left: 45%;
-        border: 2px solid #9292FF;
+        border: 5px solid #B0B0FF;
         text-align: center;
-        color: #9292FF;
+        color: #3939C5;
         background-color: white;
         font-family: 'Raleway', sans-serif;
         font-size: 1.2em;
         font-weight: bold; }
     #about .timeline .timeline-body .line {
       position: absolute;
-      border-top: 3px solid #9292FF;
+      border-top: 5px solid #B0B0FF;
       width: 20%; }
       #about .timeline .timeline-body .line.left {
         left: 30%; }
@@ -45,7 +55,7 @@
         right: 30%; }
     #about .timeline .timeline-body .dot {
       position: absolute;
-      border: 3px solid #9292FF;
+      border: 5px solid #B0B0FF;
       background-color: white;
       z-index: 8;
       border-radius: 50%;
@@ -57,7 +67,7 @@
       position: absolute;
       width: 40%;
       background-color: white;
-      border: 3px solid #9292FF;
+      border: 5px solid #B0B0FF;
       padding: 0.5em 1em; }
       #about .timeline .timeline-body .section.left {
         left: 0%; }
@@ -90,3 +100,31 @@
         margin-top: 20px; }
       #about .timeline .timeline-body .section .skills {
         margin-top: 20px; }
+#about .title-block {
+  font-family: 'Montserrat', sans-serif;
+  margin: 31px auto;
+  text-align: center;
+  background-color: #FF4C4C;
+  color: white;
+  border-color: 2px solid red;
+  border: 4px solid #FFC7C7;
+  font-size: 2em;
+  padding: 0.25em; }
+#about .top {
+  margin-bottom: 50px; }
+  #about .top .title-block {
+    width: 185px; }
+  #about .top .name {
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px; }
+  #about .top .icons {
+    text-align: center; }
+    #about .top .icons img {
+      width: 20%; }
+#about .bot .title-block {
+  width: 250px; }
+#about .top p, #about .bot p {
+  font-family: 'Raleway', sans-serif; }
