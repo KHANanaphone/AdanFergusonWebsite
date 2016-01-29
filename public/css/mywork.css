@@ -1,3 +1,5 @@
+#mywork .projects-block {
+  width: 300px; }
 #mywork .work-section {
   cursor: pointer;
   position: relative;
@@ -34,3 +36,19 @@
     font-size: 1.3em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300; }
+#mywork .top {
+  margin-bottom: 50px; }
+  #mywork .top .title-block {
+    width: 340px; }
+  #mywork .top p {
+    font-family: 'Raleway', sans-serif; }
+  #mywork .top .name {
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px; }
+  #mywork .top .icons {
+    text-align: center; }
+    #mywork .top .icons img {
+      width: 20%; }

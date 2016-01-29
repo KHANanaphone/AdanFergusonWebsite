@@ -1,5 +1,9 @@
 #mywork {
 
+    .projects-block {
+        width: 300px;
+    }
+    
     .work-section {
 
         cursor: pointer;
@@ -60,5 +64,37 @@
             font-weight: 300;
         }
 
+    }
+
+    .top {
+
+
+        margin-bottom: 50px;
+
+        .title-block{
+            width: 340px;
+        }
+
+        p{
+                font-family: 'Raleway', sans-serif;
+        }
+
+        .name {
+
+            font-family: 'Exo', sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .icons {
+
+            text-align:center;
+
+            img {
+                width: 20%;
+            }
+        }
     }
 }

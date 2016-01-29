@@ -7,6 +7,7 @@
 @import url("projects.css");
 @import url("mywork.css");
 @import url("about.css");
+@import url("contact.css");
 html, body {
   margin: 0 auto; }
 
@@ -17,7 +18,7 @@ html, body {
   background-image: url("../img/cardboard.png"); }
 
 .primary-color {
-  background-color: #4057A7; }
+  background-color: #242E50; }
 
 .subtitle {
   width: 100%;
@@ -29,3 +30,14 @@ html, body {
   text-align: center;
   background-color: #3C3B3E;
   padding-top: 53px; }
+
+.title-block {
+  font-family: 'Montserrat', sans-serif;
+  margin: 31px auto;
+  text-align: center;
+  background-color: #FF4C4C;
+  color: white;
+  border-color: 2px solid red;
+  border: 4px solid #FFC7C7;
+  font-size: 2em;
+  padding: 0.25em; }

@@ -1,0 +1,55 @@
+#contact {
+
+    margin-top: 20px;
+
+    .contact-info {
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1em;
+
+        .txt {
+
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        i {
+
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 5px;
+
+            &.fa-facebook{
+
+                background-color: #3b5998;
+            }
+
+            &.fa-twitter{
+
+                background-color: #4099FF;
+            }
+
+            &.fa-linkedin{
+
+                background-color: #007BB7;
+            }
+        }
+    }
+
+    .contact-form {
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1em;
+
+        .txt {
+
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        form {
+        }
+    }
+}
