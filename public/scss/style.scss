@@ -55,3 +55,18 @@ html, body {
     font-size: 2em;
     padding: 0.25em;
 }
+
+.form-message {
+
+    color: #FD5454;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.error {
+    color: #F14848;
+}
+
+.success {
+    color: #2AB32F;
+}

@@ -13,6 +13,8 @@
     "express": "^4.13.3",
     "express-ejs-layouts": "^2.0.0",
     "morgan": "^1.6.1",
+    "nodemailer": "^2.0.0",
+    "nodemailer-smtp-transport": "^2.0.1",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
