@@ -76,6 +76,7 @@
             font-family: 'Exo', sans-serif;
             font-weight: 800;
             padding: 0.5em 1em;
+            border: 2px solid transparent;
 
             &:hover {
 
@@ -84,7 +85,7 @@
 
             &.active {
 
-                border: 2px solid white;
+                border-color: white;
             }
         }
     }

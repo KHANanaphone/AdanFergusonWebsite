@@ -3,9 +3,10 @@
     .projects-block {
         width: 300px;
     }
-    
+
     .work-section {
 
+        display: block;
         cursor: pointer;
         position: relative;
         width: 100%;
@@ -42,10 +43,11 @@
         .image {
 
             padding: 0;
-            height: 300px;
+            height: 250px;
             background-repeat: no-repeat;
             background-size: contain;
-            background-position-x: center;
+            background-position-x: left;
+            background-position-y: center;
         }
 
         .title{
@@ -54,11 +56,12 @@
             font-family: 'Exo', sans-serif;
             font-weight: 800;
             text-transform: uppercase;
+            padding: 10px 0px;
         }
 
         .text {
 
-            margin-top: 35px;
+            padding-bottom: 10px;
             font-size: 1.3em;
             font-family: 'Raleway', sans-serif;
             font-weight: 300;
@@ -94,6 +97,21 @@
 
             img {
                 width: 20%;
+            }
+        }
+    }
+
+
+    @media (max-width:767px) {
+
+        .work-section {
+
+            .image {
+
+                height: 150px;
+                margin: 10px auto;
+                width: 50%;
+                background-position-x: center;
             }
         }
     }

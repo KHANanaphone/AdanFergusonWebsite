@@ -18,6 +18,8 @@
         background-color: #4099FF; }
       #contact .contact-info i.fa-linkedin {
         background-color: #007BB7; }
+      #contact .contact-info i.fa-github {
+        background-color: #333; }
   #contact .contact-form {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em; }

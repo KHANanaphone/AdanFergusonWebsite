@@ -155,12 +155,20 @@
                 .text {
 
                     margin-top: 20px;
+                    font-family: 'Exo', sans-serif;
                 }
 
                 .skills {
 
                     margin-top: 20px;
                 }
+            }
+        }
+
+        .skills {
+
+            img {
+                height: 40px;
             }
         }
     }
@@ -186,6 +194,13 @@
         p {
 
             margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+
+        .section .text{
+            display: none;
         }
     }
 }

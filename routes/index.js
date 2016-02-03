@@ -24,7 +24,7 @@ router.get('/*', function(req, res) {
         return res.redirect('/');
 
     res.render(currentPage.view, {
-        title: 'Express',
+        title: 'Adam Ferguson',
         pages: pages,
         currentPage: currentPage.view
     });

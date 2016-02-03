@@ -74,4 +74,12 @@
             border-style: solid;
         }
     }
+
+    @media (max-width:767px) {
+
+        .contact{
+
+            margin-bottom: 90px;
+        }
+    }
 }

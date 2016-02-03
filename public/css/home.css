@@ -6,7 +6,8 @@
   background-color: #AAF;
   border-bottom: 2px solid white; }
 .home img.self {
-  height: 430px; }
+  max-height: 430px;
+  max-width: 90%; }
 .home .splash {
   -webkit-box-shadow: 0px 7px 9px 0px #898ccc;
   -moz-box-shadow: 0px 7px 9px 0px #898ccc;

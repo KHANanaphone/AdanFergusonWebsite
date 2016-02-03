@@ -33,8 +33,10 @@
 
     function getConnector(){
 
-        var str = '<div class="line ' + current.side + '" style="' + yearToStyle(current.top) + '"></div>';
-        str += '<div class="dot" style="' + yearToStyle(current.top) + '"></div>';
+        var top = current.connector ? current.connector : current.top;
+
+        var str = '<div class="line ' + current.side + '" style="' + yearToStyle(top) + '"></div>';
+        str += '<div class="dot" style="' + yearToStyle(top) + '"></div>';
         return str;
     };
 %>
@@ -61,54 +63,100 @@
              <% } %>
 
              <!-- SECTIONS -->
-             <% current = {side: 'left', top: 2008} %>
+             <% current = {side: 'left', top: 2007, connector: 2008} %>
              <%- getConnector() %>
               <div class='section left' style='<%= getStyle() %>'>
                  <div class='date'>January 2008 - January 2010</div>
                  <div class='employer'>University of Alberta/Hole School of Construction Engineering</div>
                  <div class='position'>Software Developer (Internship)</div>
-                 <div class='text'>Text text text</div>
-                 <div class='skills'>Skills</div>
+                 <div class='text'>
+                    Full-time paid internship, working on a rewrite of a program to be used by engineer graduate & PhD students to create simulations of engineering projects.
+                 </div>
+                 <div class='skills'>
+                     <img src='/img/csharp.png'></img>
+                    <img src='/img/dotnet.png'></img>
+                 </div>
              </div>
 
-             <% current = {side: 'left', top: 2010.75} %>
+             <% current = {side: 'left', top: 2010.5, connector: 2010.75} %>
              <%- getConnector() %>
               <div class='section left' style='<%= getStyle() %>'>
                  <div class='date'>October 2010 - July 2011</div>
                  <div class='employer'>Asymmetric Ventures</div>
                  <div class='position'>Software Developer</div>
-                 <div class='text'>Text text text</div>
-                 <div class='skills'>Skills</div>
+                 <div class='text'>Worked on various projects for a small marketing company. Work involved creating Wordpress websites for clients, and assisting
+                     with a database migration and maintenance project.
+                 </div>
+                 <div class='skills'>
+                     <img src='/img/csharp.png'></img>
+                     <img src='/img/mssql.png'></img>
+                     <img src='/img/php.png'></img>
+                     <img src='/img/wordpress.png'></img>
+                 </div>
              </div>
 
-             <% current = {side: 'left', top: 2014} %>
+             <% current = {side: 'left', top: 2013.5, connector: 2014} %>
              <%- getConnector() %>
               <div class='section left' style='<%= getStyle() %>'>
                  <div class='date'>January 2014 - November 2014</div>
                  <div class='employer'>SpatialTree</div>
-                 <div class='position'>Lead Web Developer </div>
-                 <div class='text'>Text text text</div>
-                 <div class='skills'>Skills</div>
+                 <div class='position'>Lead Web Developer</div>
+                 <div class='text'>
+                     Full-stack development of a web application for a startup company. Users would be able to create and edit articles, charts, and inforgraphics
+                     using data from various sources.
+                 </div>
+                 <div class='skills'>
+                     <img src='/img/nodejs.png'></img>
+                     <img src='/img/js.png'></img>
+                     <img src='/img/css3.png'></img>
+                     <img src='/img/html5.png'></img>
+                 </div>
              </div>
 
-             <% current = {side: 'right', top: 2004.75, bottom: 2010} %>
+             <% current = {side: 'right', top: 2004.75} %>
              <%- getConnector() %>
               <div class='section right' style='<%= getStyle() %>'>
                  <div class='date'>September 2004 - April 2010</div>
                  <div class='employer'>University of Alberta</div>
                  <div class='position'>BSc. Computing Science</div>
-                 <div class='text'>Text text text</div>
-                 <div class='skills'>Skills</div>
+                 <div class='text'>
+                     Where it all began. I started off majoring in Mathematics, but quickly switched
+                     to computing science after two years. Still, the mathematical skills I learned have proven invaluable.<br/>
+                    <br/>
+                    Some of the more interesting courses taken were Compiler Design, Robotics, Coding Theory, and Formal Languages.<br/>
+                    <br/>
+                    Graduated with a 3.5 GPA.
+                 </div>
+
+                 <div class='skills'>
+                     <img src='/img/c-logo.png'></img>
+                     <img src='/img/java.jpg'></img>
+                 </div>
              </div>
 
-             <% current = {side: 'right', top: 2011.66, bottom: 2015.75} %>
+             <% current = {side: 'right', top: 2010.75, connector: 2011.66} %>
              <%- getConnector() %>
               <div class='section right' style='<%= getStyle() %>'>
                   <div class='date'>September 2011 - Present</div>
                   <div class='employer'>Self-Employed / Freelancing</div>
                   <div class='position'>Web & Software Developer, Game Designer</div>
-                  <div class='text'>Text text text</div>
-                  <div class='skills'>Skills</div>
+                  <div class='text'>
+                      Freelance web development to various extents. Some were found through websites like Fiverr or Upwork, and some were from
+                      word of mouth. Lots of work with animations using tools like Greensock, or just with straight-up
+                      CSS animations.<br/>
+                      <br/>
+                      Also spent a lot of time learning new technologies that I felt were in high demand, such as AngularJS and Cordova (as well
+                      as tools that use Cordova like Phonegap and Ionic). Combined this goal with my hobby of designing games, and hope to get one
+                      of them licensed soon!
+                  </div>
+                  <div class='skills'>
+                      <img src='/img/csharp.png'></img>
+                      <img src='/img/angular.png'></img>
+                      <img src='/img/cordova.png'></img>
+                      <img src='/img/js.png'></img>
+                      <img src='/img/css3.png'></img>
+                      <img src='/img/html5.png'></img>
+                  </div>
               </div>
         </div>
     </div>

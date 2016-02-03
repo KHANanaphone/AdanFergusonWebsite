@@ -1,6 +1,7 @@
 #mywork .projects-block {
   width: 300px; }
 #mywork .work-section {
+  display: block;
   cursor: pointer;
   position: relative;
   width: 100%;
@@ -21,18 +22,20 @@
       background-color: #355835; }
   #mywork .work-section .image {
     padding: 0;
-    height: 300px;
+    height: 250px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: center; }
+    background-position-x: left;
+    background-position-y: center; }
   #mywork .work-section .title {
     text-align: center;
     font-size: 2em;
     font-family: 'Exo', sans-serif;
     font-weight: 800;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 10px 0px; }
   #mywork .work-section .text {
-    margin-top: 35px;
+    padding-bottom: 10px;
     font-size: 1.3em;
     font-family: 'Raleway', sans-serif;
     font-weight: 300; }
@@ -52,3 +55,9 @@
     text-align: center; }
     #mywork .top .icons img {
       width: 20%; }
+@media (max-width: 767px) {
+  #mywork .work-section .image {
+    height: 150px;
+    margin: 10px auto;
+    width: 50%;
+    background-position-x: center; } }

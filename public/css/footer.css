@@ -44,3 +44,6 @@
     cursor: pointer; }
     .footer .side:hover {
       border-style: solid; }
+  @media (max-width: 767px) {
+    .footer .contact {
+      margin-bottom: 90px; } }

@@ -89,9 +89,12 @@
         font-style: italic;
         margin-top: 10px; }
       #about .timeline .timeline-body .section .text {
-        margin-top: 20px; }
+        margin-top: 20px;
+        font-family: 'Exo', sans-serif; }
       #about .timeline .timeline-body .section .skills {
         margin-top: 20px; }
+  #about .timeline .skills img {
+    height: 40px; }
 #about .text-section {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
@@ -105,3 +108,6 @@
     font-weight: bolder; }
   #about .text-section p {
     margin-bottom: 30px; }
+@media screen and (max-width: 767px) {
+  #about .section .text {
+    display: none; } }
