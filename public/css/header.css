@@ -32,6 +32,8 @@
       stroke: white !important; }
     .header .title:hover line {
       stroke: white !important; }
+    .header .title:hover .name {
+      text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF; }
   .header .menu {
     position: absolute;
     top: 15px;
