@@ -6,20 +6,6 @@
     #contact .contact-info .txt {
       font-weight: bold;
       margin-bottom: 10px; }
-    #contact .contact-info i {
-      font-size: 1.5em;
-      color: white;
-      cursor: pointer;
-      padding: 4px;
-      border-radius: 5px; }
-      #contact .contact-info i.fa-facebook {
-        background-color: #3b5998; }
-      #contact .contact-info i.fa-twitter {
-        background-color: #4099FF; }
-      #contact .contact-info i.fa-linkedin {
-        background-color: #007BB7; }
-      #contact .contact-info i.fa-github {
-        background-color: #333; }
   #contact .contact-form {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em; }

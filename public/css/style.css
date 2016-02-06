@@ -52,3 +52,21 @@ html, body {
 
 .success {
   color: #2AB32F; }
+
+.social-links {
+  text-align: center;
+  margin-bottom: 25px; }
+  .social-links i {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px; }
+    .social-links i.fa-facebook {
+      background-color: #3b5998; }
+    .social-links i.fa-twitter {
+      background-color: #4099FF; }
+    .social-links i.fa-linkedin {
+      background-color: #007BB7; }
+    .social-links i.fa-github {
+      background-color: #333; }
