@@ -4,6 +4,12 @@ var nodemailer = require('nodemailer');
 
 /* GET home page. */
 
+router.get('/404', function(req, res) {
+	
+	
+	res.send('Oh no 404');
+});
+
 router.get('/*', function(req, res) {
 
     var url = req.url.substring(1);
@@ -21,7 +27,7 @@ router.get('/*', function(req, res) {
     var currentPage = pages[url];
 
     if(!currentPage)
-        return res.redirect('/');
+        return res.redirect('404');
 
     res.render(currentPage.view, {
         title: 'Adam Ferguson',
